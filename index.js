@@ -5,7 +5,7 @@ var message = document.querySelector(".message");
 var number = Math.ceil((Math.random() * 100));
 
 function guessRandomNumber(){
-    if(guess.value < number){
+    if(guess.value < number) {
         message.innerHTML = "Your guess is too low.";
         setTimeout(function(){
             message.innerHTML = "";
@@ -26,7 +26,5 @@ function guessRandomNumber(){
             message.innerHTML = "New Game Started";
          }, 3000);
     }
-
-   
-
-}guessBtn.addEventListener("click", guessRandomNumber)
+}
+guessBtn.addEventListener("click", guessRandomNumber)
